@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Clock</title>
+<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="clock.css" />
+<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="clock.js"></script>
+</head>
+
+<body onLoad="timed()" id="body">
+<div class="container">
+<div id="first">
+    	<div id="second">
+            <span id="one" class="no">1</span>
+            <span id="two" class="no">2</span>
+            <span id="three" class="no">3</span>
+            <span id="four" class="no">4</span>
+            <span id="five" class="no">5</span>
+            <span id="six" class="no">6</span>
+            <span id="seven" class="no">7</span>
+            <span id="eight" class="no">8</span>
+            <span id="nine" class="no">9</span>
+            <span id="ten" class="no">10</span>
+            <span id="eleven" class="no">11</span>
+            <span id="twelve" class="no">12</span>
+            
+            <div id="hour"></div>
+            <div id="minute"></div>
+            <div id="seconds" class="seconds"></div>
+            <div class="badge">0</div>
+            <p id="greet"></p>
+            
+            <input type="text" id="timer" />
+            <input type="text" id="hr" hidden="true" />
+            <input type="text" id="min" hidden="true" />
+            <input type="text" id="sec" hidden="true" />
+        </div>
+    </div>
+    
+    <div id="alarm" style="border:solid 2px maroon ; width:auto ; height:100px ;">
+        
+        <!--<input type="file" id="alamfile" />-->
+        
+   	<button type="button" id="shows" onClick="shows()" class="btn btn-info">Set alarm</button>
+<script type="text/javascript">
+			function shows()
+			{
+				document.getElementById("setalarm").hidden = false ;
+				//alamfile = document.getElementById("alamfile").value ;
+				//alert(alamfile) ;
+			}
+		</script>
+        <span id="setalarm" hidden="true">
+        	<label>Hour(hr)<input type="number" maxlength="2" id="hralarm">
+        	<label>Minute(min)<input type="number" maxlength="2" id="minalarm">
+        </span>
+        <!--<button type="button" id="hides" onClick="hidealarm()">End alarm</button>-->
+<script type="text/javascript">
+			function hidealarm()
+			{
+				document.getElementById("music").hidden = true ;
+				document.getElementById("shows").hidden = false ;
+				document.getElementById("setalarm").hidden = false ;
+			}
+		</script>
+    </div>
+
+</div>
+
+
+</body>
+</html>

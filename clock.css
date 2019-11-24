@@ -1,0 +1,170 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body		{*background-color:maroon ;}
+
+.container	{border:solid red 2px ;}
+
+#first		{width:600px ;
+			height:600px ;
+			border:10px cyan groove ;
+			border-radius:1000px ;
+			*position:relative ;
+			left:25% ;
+			*top:50px ;}
+			
+#second		{width:500px ;
+			height:500px ;
+			border:10px blue groove ;
+			border-radius:1000px ;
+			position:relative ;
+			left:40px ;
+			top:40px ;}
+			
+.no			{font-family:"AR BLANCA" ;
+			font-size:36px ;
+			*font-weight:bold ;}
+			
+#one	{position:absolute ;
+		left:75% ;
+		top:-5% ;}
+			
+#two	{position:absolute ;
+		left:95% ;
+		top:15% ;}
+			
+#three	{position:absolute ;
+		left:105% ;
+		top:45% ;}
+			
+#four	{position:absolute ;
+		left:98% ;
+		top:70% ;}
+			
+#five	{position:absolute ;
+		left:78% ;
+		top:93% ;}
+			
+#six	{position:absolute ;
+		left:50% ;
+		top:100% ;}
+			
+#seven	{position:absolute ;
+		right:78% ;
+		top:93% ;}
+			
+#eight	{position:absolute ;
+		right:98% ;
+		top:70% ;}
+			
+#nine	{position:absolute ;
+		right:105% ;
+		top:45% ;}
+			
+#ten	{position:absolute ;
+		right:95% ;
+		top:15% ;}
+			
+#eleven	{position:absolute ;
+		right:75% ;
+		top:-5% ;}
+			
+#twelve	{position:absolute ;
+		left:48% ;
+		top:-12% ;}
+		
+#hour	{height:35% ;
+		width:15px ;
+		border:solid 2px blue ;
+		border-top:inset blue !important ;
+		*border-bottom:solid 5px black ;
+		border-top-right-radius:10px ;
+		border-top-left-radius:10px ;
+		position:absolute ;
+		left:50% ;
+		top:15% ;}
+		
+#minute	{height:49% ;
+		width:10px ;
+		border:solid 2px cyan ;
+		border-top:inset cyan !important ;
+		border-top-right-radius:10px ;
+		border-top-left-radius:10px ;
+		position:absolute ;
+		left:50% ;
+		top:0% ;
+		*-webkit-animation:name 4s linear infinite ;
+		*animation:name 4s linear infinite ;
+		*transform-origin:bottom ;
+		*transform:rotate(30deg) ;}
+		
+#seconds	{height:45% ;
+			width:5px ;
+			border:solid 2px red ;
+			border-top:inset red !important ;
+			border-top-right-radius:10px ;
+			border-top-left-radius:10px ;
+			position:absolute ;
+			left:50% ;
+			top:5% ;}
+			
+.badge		{position:absolute !important ;
+			top:48% ;
+			left:49% ;
+			color:inherit ;
+			*background-color:black ;}
+
+/*.seconds	{height:45% ;
+			width:5px ;
+			border:solid 2px red ;
+			border-top:inset !important ;
+			border-top-right-radius:10px ;
+			border-top-left-radius:10px ;
+			position:absolute ;
+			left:50% ;
+			top:5% ;
+			-webkit-animation:spin 60s linear infinite ;
+			animation:spin 60s linear infinite ;}*/
+		
+#timer	{position:absolute ;
+		top:80% ;
+		left:42% ;
+		width:21% ;
+		font-family:"Century751 SeBd BT" ;
+		font-size:16px ;
+		background-color:inherit ;
+		*color:red ;}
+
+#greet	{position:absolute ;
+		top:90% ;
+		left:40% ;
+		*width:20% ;
+		font-family:"AR BLANCA" ;
+		font-size:20px ;
+		*border:solid 2px yellow ;
+		-webkit-animation:greet 2s linear infinite ;
+		animation:greet 2s linear infinite ;}
+
+			
+			
+			
+@-webkit-keyframes greet	{
+	0%{-webkit-left:8% ;}
+	100%{-webkit-right:8% ;}
+}
+
+@keyframes greet	{
+	0%{-webkit-left:8% ;}
+	100%{-webkit-right:8% ;}
+}
+
+@-webkit-keyframes spin	{
+	0%{-webkit-transform:rotate(0deg) ;}
+	100%{-webkit-transform:rotate(360deg) ;}
+}
+
+@keyframes spin	{
+	0%{transform:rotate(0deg) ;}
+	100%{transform:rotate(360deg) ;}
+}
